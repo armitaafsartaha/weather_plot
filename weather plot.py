@@ -34,7 +34,7 @@ def plot_weather_data(filepath):
           maxs.append(tmax)
           mins.append(tmin)
     
-    plt.style.use('_classic_test_patch')
+    plt.style.use('Solarize_Light2')
     fig,ax=plt.subplots()
 
     ax.plot(dates,maxs,color='red')
@@ -50,4 +50,5 @@ file_input=input("write path of file:")
 if not file_input:
     print("No file path entered. Exiting.")
 else:
+
     plot_weather_data(file_input)
